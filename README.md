@@ -34,7 +34,7 @@ As you will need documentation also here: https://docs.sentinel.co/sentinel-cli
 
 You need to run container as privilegied:
 
-I'm running this container on e k8s stack so to get a overview of the config in k8s / yaml 
+I'm running this container on a k8s stack so to get a overview of the config in k8s / yaml 
 ```
 apiVersion: apps/v1
 kind: Deployment
