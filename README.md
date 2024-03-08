@@ -11,7 +11,7 @@ docker run \
     --env TZ=Europe/London \
     --privileged \
     --read-only=false \
-    --volume /mnt/.sentinel-wallet/:/root/.sentinelcli \
+    --volume "$(pwd)/.sentinel-wallet/:/root/.sentinelcli" \
     --dns=172.17.0.1 \
     --network=bridge \
     cyberpoison/sentinel-client-cli:amd64 \
