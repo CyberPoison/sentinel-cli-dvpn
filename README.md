@@ -3,7 +3,24 @@ Dockerfile for the docker image with sentinel-cli dvpn : https://hub.docker.com/
 More documentation shortly
 
 Some improvement and documentation from external sources
-
+Docker run command
+```
+docker run \
+    --name dvpn \
+    --restart=always \
+    --env TZ=Europe/London \
+    --privileged \
+    --read-only=false \
+    --volume /mnt/.sentinel-wallet/:/root/.sentinelcli \
+    --dns=172.17.0.1 \
+    --network=bridge \
+    cyberpoison/sentinel-client-cli:amd64 \
+    tail -f /dev/null
+```
+then:
+```
+docker exec -it dvpn /bin/bash
+```
 Go to docker exec and do:
 ```
 sysctl -w "net.ipv6.conf.all.disable_ipv6 = 0"
