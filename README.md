@@ -12,7 +12,6 @@ docker run \
     --privileged \
     --read-only=false \
     --volume "$(pwd)/.sentinel-wallet/:/root/.sentinelcli" \
-    --dns=172.17.0.1 \
     --network=bridge \
     cyberpoison/sentinel-client-cli:amd64 \
     /bin/sh -c "/root/setup_network.sh"
