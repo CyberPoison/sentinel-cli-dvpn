@@ -20,7 +20,10 @@ then:
 ```
 docker exec -it dvpn /bin/bash
 ```
-Go to docker exec and do:
+
+### in case the script has not been executed you can run the below commands.
+ 
+Go to docker container exec and do:
 ```
 sysctl -w "net.ipv6.conf.all.disable_ipv6 = 0"
 sysctl -w "net.ipv6.conf.all.disable_ipv6 = 0"
