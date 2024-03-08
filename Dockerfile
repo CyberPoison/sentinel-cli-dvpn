@@ -31,5 +31,12 @@ RUN make install
 # Create a symbolic link
 RUN ln -s "${HOME}/sentinelcli" /usr/local/bin/sentinelcli
 
-# Define the entrypoint
-CMD ["tail", "-f", "/dev/null"]
+# Copy setup_network.sh into the Docker container
+COPY setup_network.sh /root/setup_network.sh
+
+# Make setup_network.sh executable
+RUN chmod +x /root/setup_network.sh
+
+# Define the entrypoint to execute setup_network.sh
+ENTRYPOINT ["/root/setup_network.sh"]
+
