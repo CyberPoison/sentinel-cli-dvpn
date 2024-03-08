@@ -1,4 +1,5 @@
-Dockerfile for the docker image with sentinel-cli dvpn : https://hub.docker.com/repository/docker/cyberpoison/sentinel-client-cli/general
+Dockerfile for the docker image with sentinel-cli dvpn : [https://hub.docker.com/r/cyberpoison/sentinel-client-cli-dvpn
+](https://hub.docker.com/r/cyberpoison/sentinel-client-cli-dvpn)
 
 More documentation shortly
 
@@ -13,7 +14,7 @@ docker run \
     --read-only=false \
     --volume "$(pwd)/.sentinel-wallet/:/root/.sentinelcli" \
     --network=bridge \
-    cyberpoison/sentinel-client-cli:amd64 \
+    cyberpoison/sentinel-client-cli:main \
     /bin/sh -c "/root/setup_network.sh"
 ```
 then:
