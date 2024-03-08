@@ -14,7 +14,7 @@ docker run \
     --read-only=false \
     --volume "$(pwd)/.sentinel-wallet/:/root/.sentinelcli" \
     --network=bridge \
-    cyberpoison/sentinel-client-cli:main \
+    cyberpoison/sentinel-client-cli-dvpn:latest \
     /bin/sh -c "/root/setup_network.sh"
 ```
 then:
