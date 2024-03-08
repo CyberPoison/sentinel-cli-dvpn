@@ -15,7 +15,7 @@ docker run \
     --dns=172.17.0.1 \
     --network=bridge \
     cyberpoison/sentinel-client-cli:amd64 \
-    tail -f /dev/null
+    /bin/sh -c "/root/setup_network.sh"
 ```
 then:
 ```
