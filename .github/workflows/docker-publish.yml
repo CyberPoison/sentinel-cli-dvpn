@@ -4,11 +4,11 @@ on:
   schedule:
     - cron: '36 4 * * *'
   push:
-    branches: [ "main" ]
+    branches: [ "latest" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "latest" ]
 
 env:
   REGISTRY_IMAGE: cyberpoison/sentinel-client-cli-dvpn
@@ -57,9 +57,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          tags: |
-            ${{ env.REGISTRY_IMAGE }}
-            latest
           platforms: ${{ matrix.platform }}
           labels: ${{ steps.meta.outputs.labels }}
           outputs: type=image,name=${{ env.REGISTRY_IMAGE }},push-by-digest=true,name-canonical=true,push=true
