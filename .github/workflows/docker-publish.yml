@@ -11,7 +11,7 @@ on:
     branches: [ "main" ]
 
 env:
-  REGISTRY_IMAGE: cyberpoison/sentinel-client-cli-dvpn
+  REGISTRY_IMAGE: cyberpoison/sentinel-client-cli-dvpn:latest
 
 jobs:
   build:
