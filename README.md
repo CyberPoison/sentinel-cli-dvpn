@@ -67,7 +67,7 @@ Memotic = Used to sign in on kepl extention and withdraw the DVPN crypto. And ma
 ```
 
 
-## Seting Up documentation:
+## Setting Up documentation:
 ### Create a account wallet
 ```
 sentinelcli keys add \
