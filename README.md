@@ -1,4 +1,5 @@
-ATTENTION: V2RAY is installed but not working need some time to understand how that soft works !!.
+## Docker of Sentinel-CLI Client DVPN 
+#### ATTENTION: V2RAY is installed but not working need some time to understand how that soft works !!.
 
 Dockerfile for the docker image with sentinel-cli dvpn : [https://hub.docker.com/r/cyberpoison/sentinel-client-cli-dvpn
 ](https://hub.docker.com/r/cyberpoison/sentinel-client-cli-dvpn)
@@ -53,6 +54,68 @@ ip route add ::ffff:c0a8:0/112 dev eth0
 Then follow tutorial here: https://standardvpn.com/dvpn-cli/
 
 As you will need documentation also here: https://docs.sentinel.co/sentinel-cli
+
+## Seting Up documentation:
+### Add account wallet
+```
+sentinelcli keys add \
+    --home "${HOME}/.sentinelcli" \
+    --keyring-backend file \
+    <KEY_NAME> 
+```
+### PLEASE SAVE THE MEMOTIC (IT'S AT THE BOTTOM BEFORE THE PROMPT SHELL) 
+if you want you can use: [https://map.sentinel.co/](https://map.sentinel.co/) to select your node
+```
+sentinelcli query nodes \
+    --home "${HOME}/.sentinelcli" \
+    --node https://rpc.trinityvalidator.com:443 \
+    --status Active \
+    --page 1
+```
+
+### INFO
+Please ensure that you select one option between <gigabytes> and <hours>. The unused option should be assigned a value of 0.
+Use: [https://map.sentinel.co/](https://map.sentinel.co/) to select your node
+
+```
+sentinelcli tx node subscribe \
+  <sentnode_address> \
+  <gigabytes> \
+  <hours> \
+  udvpn \
+  --from test \
+  --chain-id=sentinelhub-2 \
+  --node https://rpc.trinityvalidator.com:443 \
+  --gas-prices=0.5udvpn \
+  --gas=300000
+```
+
+### Get you subscrition id:
+```
+sentinelcli query subscriptions \
+    --home "${HOME}/.sentinelcli" \
+    --node https://rpc.trinityvalidator.com:443 \
+    --status Active \
+    --page 1 \
+    --address <ACCOUNT_ADDRESS>
+```
+### Connect 🚀
+```
+sudo sentinelcli connect \
+    --home "${HOME}/.sentinelcli" \
+    --keyring-backend file \
+    --chain-id sentinelhub-2 \
+    --node https://rpc.trinityvalidator.com:443 \
+    --gas-prices 0.1udvpn \
+    --yes \
+    --from <KEY_NAME> <SUBSCRIPTION_ID> <NODE_ADDRESS>
+```
+
+### Disconnect: ⚠️
+```
+sudo sentinelcli disconnect \
+    --home "${HOME}/.sentinelcli"
+```
 
 You need to run container as privilegied:
 
