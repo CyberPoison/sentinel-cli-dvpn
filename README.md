@@ -1,12 +1,14 @@
+![DVPN](https://assets.coingecko.com/coins/images/14879/standard/YMEMrc-V_400x400.jpg "DVPN")
+
 ## Docker of Sentinel-CLI Client DVPN 
+
 #### ATTENTION: V2RAY is installed but not working need some time to understand how that soft works !!.
 
-Dockerfile for the docker image with sentinel-cli dvpn : [https://hub.docker.com/r/cyberpoison/sentinel-client-cli-dvpn
+This repo contains: Dockerfile and Network Script, for the docker image with sentinel-cli dvpn : [https://hub.docker.com/r/cyberpoison/sentinel-client-cli-dvpn
 ](https://hub.docker.com/r/cyberpoison/sentinel-client-cli-dvpn)
 
 More documentation shortly
 
-Some improvement and documentation from external sources
 Docker run command
 ```
 docker run \
@@ -51,9 +53,9 @@ ip route add ::ffff:ac10:0/108 dev eth0
 ip route add ::ffff:c0a8:0/112 dev eth0
 ```
 
-Then follow tutorial here: https://standardvpn.com/dvpn-cli/
+More docs here: https://standardvpn.com/dvpn-cli/
 
-As you will need documentation also here: https://docs.sentinel.co/sentinel-cli
+Need documentation also ? It's here: https://docs.sentinel.co/sentinel-cli
 
 ## Seting Up documentation:
 ### Create a account wallet
