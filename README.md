@@ -79,6 +79,8 @@ sentinelcli keys add \
 
 save also the wallet/account addess you will need it in the future steps :)  
 
+### Query nodes by page .
+
 if you want you can use: [https://map.sentinel.co/](https://map.sentinel.co/) to select your node
 ```
 sentinelcli query nodes \
@@ -87,7 +89,7 @@ sentinelcli query nodes \
     --page 1
 ```
 
-### INFO
+### Subscribe to a node
 Please ensure that you select one option between `<gigabytes>` and `<hours>`. The unused option should be assigned a value of 0.
 
 Use: [https://map.sentinel.co/](https://map.sentinel.co/) to select your node if you want.
@@ -126,7 +128,7 @@ sudo sentinelcli connect \
     --from <KEY_NAME> <SUBSCRIPTION_ID> <NODE_ADDRESS>
 ```
 
-### Disconnect: ⚠️
+### Disconnect ⚠️ disconect you to the node server.
 ```
 sudo sentinelcli disconnect \
     --home "${HOME}/.sentinelcli"
