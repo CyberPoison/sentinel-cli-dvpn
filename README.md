@@ -1,3 +1,5 @@
+ATTENTION: V2RAY is installed but not working need some time to understand how that soft works !!.
+
 Dockerfile for the docker image with sentinel-cli dvpn : [https://hub.docker.com/r/cyberpoison/sentinel-client-cli-dvpn
 ](https://hub.docker.com/r/cyberpoison/sentinel-client-cli-dvpn)
 
@@ -137,4 +139,6 @@ All this work is under GPL Domain :)
 
 Code will be commited shortly as soon i have managed getting it working on kubernetes, btw the container it self is giving already a node dvpn sentinell ip :) 🚀🚀
 
-This docker image is working.
+This docker image is working only with **wireguard** .
+
+
