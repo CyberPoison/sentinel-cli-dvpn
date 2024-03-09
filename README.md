@@ -56,20 +56,22 @@ Then follow tutorial here: https://standardvpn.com/dvpn-cli/
 As you will need documentation also here: https://docs.sentinel.co/sentinel-cli
 
 ## Seting Up documentation:
-### Add account wallet
+### Create a account wallet
 ```
 sentinelcli keys add \
     --home "${HOME}/.sentinelcli" \
     --keyring-backend file \
     <KEY_NAME> 
 ```
-### PLEASE SAVE THE MEMOTIC (IT'S AT THE BOTTOM BEFORE THE PROMPT SHELL) 
+### PLEASE SAVE THE MEMOTIC (IT'S AT THE BOTTOM BEFORE THE PROMPT SHELL) IT WILL BE NOT POSSIBLE TO RECOVER IT, SO SAVE IT IN A SAFE PLACE !!.
+
+save also the wallet/account addess you will need it in the future steps :)  
+
 if you want you can use: [https://map.sentinel.co/](https://map.sentinel.co/) to select your node
 ```
 sentinelcli query nodes \
     --home "${HOME}/.sentinelcli" \
     --node https://rpc.trinityvalidator.com:443 \
-    --status Active \
     --page 1
 ```
 
@@ -84,23 +86,23 @@ sentinelcli tx node subscribe \
   <gigabytes> \
   <hours> \
   udvpn \
-  --from test \
+  --from  <KEY_NAME>  \
   --chain-id=sentinelhub-2 \
   --node https://rpc.trinityvalidator.com:443 \
   --gas-prices=0.5udvpn \
-  --gas=300000
+  --gas=300000 \
+  --keyring-backend file
 ```
 
-### Get you subscrition id:
+### Get your subscrition id:
 ```
 sentinelcli query subscriptions \
     --home "${HOME}/.sentinelcli" \
     --node https://rpc.trinityvalidator.com:443 \
-    --status Active \
     --page 1 \
     --address <ACCOUNT_ADDRESS>
 ```
-### Connect 🚀
+### Connect to node as client 🚀
 ```
 sudo sentinelcli connect \
     --home "${HOME}/.sentinelcli" \
