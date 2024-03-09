@@ -74,8 +74,9 @@ sentinelcli query nodes \
 ```
 
 ### INFO
-Please ensure that you select one option between <gigabytes> and <hours>. The unused option should be assigned a value of 0.
-Use: [https://map.sentinel.co/](https://map.sentinel.co/) to select your node
+Please ensure that you select one option between `<gigabytes>` and `<hours>`. The unused option should be assigned a value of 0.
+
+Use: [https://map.sentinel.co/](https://map.sentinel.co/) to select your node if you want.
 
 ```
 sentinelcli tx node subscribe \
