@@ -57,6 +57,16 @@ More docs here: https://standardvpn.com/dvpn-cli/
 
 Need documentation also ? It's here: https://docs.sentinel.co/sentinel-cli
 
+#### Tags meanings:
+```
+<KEY_NAME>  = Wallet Name
+<ACCOUNT_ADDRESS> = Your Wallet/account Address
+<NODE_ADDRESS> = The Node you want to subscribe usually starts with "sentnode....."
+<SUBSCRIPTION_ID> = Subscrition ID ? Your Subscription id on sentinel network
+Memotic = Used to sign in on kepl extention and withdraw the DVPN crypto. And maybe for other things ....
+```
+
+
 ## Seting Up documentation:
 ### Create a account wallet
 ```
