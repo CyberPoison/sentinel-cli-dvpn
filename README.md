@@ -77,6 +77,8 @@ sentinelcli keys add \
 ```
 ### PLEASE SAVE THE MEMOTIC (IT'S AT THE BOTTOM BEFORE THE PROMPT SHELL) IT WILL BE NOT POSSIBLE TO RECOVER IT, SO SAVE IT IN A SAFE PLACE !!.
 
+**The memotic can be useful to sig in on your keplr extention and manage the cryto**
+
 save also the wallet/account addess you will need it in the future steps :)  
 
 ### Query nodes by page .
