@@ -4,6 +4,8 @@
 
 #### ATTENTION: V2RAY is installed but not working need some time to understand how that soft works !!.
 
+Follow the backlog of the project: https://github.com/CyberPoison/sentinel-cli-dvpn/projects
+
 This repo contains: Dockerfile and Network Script, for the docker image with sentinel-cli dvpn : [https://hub.docker.com/r/cyberpoison/sentinel-client-cli-dvpn
 ](https://hub.docker.com/r/cyberpoison/sentinel-client-cli-dvpn)
 
