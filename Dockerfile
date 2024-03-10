@@ -37,6 +37,6 @@ COPY setup_network.sh /root/setup_network.sh
 # Make setup_network.sh executable
 RUN chmod +x /root/setup_network.sh
 
-# Define the entrypoint to execute setup_network.sh
-ENTRYPOINT ["/root/setup_network.sh"]
+# Define the CMD to execute setup_network.sh
+CMD ["/root/setup_network.sh"]
 
