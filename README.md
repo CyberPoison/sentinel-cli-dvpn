@@ -25,7 +25,7 @@ docker run \
 ```
 then:
 ```
-docker exec -it dvpn /bin/bash
+docker exec -it -w /root/ dvpn /bin/bash
 ```
 
 ### in case the script has not been executed you can run the below commands.
